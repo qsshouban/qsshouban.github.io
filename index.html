@@ -43,6 +43,7 @@
         images.push(item.download_url);
           }
         });
+        currentIndex = Math.floor(Math.random() * images.length);
         document.getElementById('image').src = images[currentIndex];
       })
       .catch(error => {
